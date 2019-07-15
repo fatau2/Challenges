@@ -1,0 +1,35 @@
+/*
+  ////////////
+  Tiket Konser
+  ////////////
+
+  Buatlah suatu algoritma untuk pembelian tiket konser.
+
+  [INSTRUCTIONS]
+    1. Peserta konser akan membeli berdasarkan uang yang dia miliki, dan asumsi
+       akan memilih harga yang paling mahal.
+    2. Apabila peserta konser memiliki uang yang lebih rendah dari tiket konser,
+       maka dia akan pulang ke rumah.
+    3. Harga jenis kursi konser, antara lain:
+      - VVIP 1000000
+      - VIP  700000
+      - Reguler 300000
+    4. Apabila membeli tiket, tampilkan dalam format [nama]-[jenis kursi] dan [kembalian]
+
+  [RULES]
+    1. Hanya tulis Algoritma saja
+*/
+
+// type here
+
+1. STORE ticket buyer's budget as "money"
+2. STORE regular ticket price as "regular"
+3. STORE VIP ticket price as "vip"
+4. STORE VVIP ticket price as "vvip"
+5. STORE buyer's owning ticket as BOOLEAN "hasTicket"
+5. IF "money" is LESS than "regular" the buyer does not buy a ticket and "hasTicket" is SET to FALSE
+6. ELSE IF "money" is GREATER THAN "vvip" the buyer buys "vvip" 
+7. ELSE IF "money" is GREATER THAN "vip" but LESS than "vvip" buyer buys "vip"
+8. ELSE IF "money" is GREATER THAN "regular" but LESS THAN "vip" AND "vvip" buyer buys "regular"
+9. IF "hasTicket" is TRUE PRINT the ticket the buyer has purchased in the following order: name, class, and change.
+

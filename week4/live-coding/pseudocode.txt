@@ -1,0 +1,24 @@
+function sumTheNumber(stringNumber) {
+ 
+READ array stringNumber
+counter = 0
+listOfNumbers = []
+WHILE counter <= stringNumber.length - 1
+	modulo = counter % 2
+	IF modulo != 0
+		listOfNumbers.push(parseInt(stringNumber[counter]) * 2)
+		
+	ELSE
+		listOfNumbers.push(parseInt(stringNumber[counter]))
+	counter++
+counter = 0
+multiplied = 1
+WHILE counter <= listOfNumbers - 1
+	multiplied = multiplied * listOfNumbers[counter]
+}
+RETURN multiplied
+
+console.log(sumTheNumber('123456')) // 33
+console.log(sumTheNumber('341231')) // 21
+console.log(sumTheNumber('1')) // 1
+console.log(sumTheNumber('01')) // 2
