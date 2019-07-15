@@ -29,8 +29,8 @@ function groupAnimals(animals) {
 				counter++;
 			} 
 		}
-	animalsAlphabeticallyArranged.push(tempArray);
-	counter++;
+		animalsAlphabeticallyArranged.push(tempArray);
+		counter++;
 	}
 	return animalsAlphabeticallyArranged;
 }
