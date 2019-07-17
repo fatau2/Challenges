@@ -18,8 +18,6 @@ function checkAB(num) {
             newNum = newNum + num[i];
         }
     }
-    //console.log(newNum);
-    //console.log(JSON.stringify(newNum.indexOf('a'),null,2));
     //determine 'a' and 'b' positions
     for(var i = 0; i < newNum.length; i++){
         if(newNum[i] === 'a'){
