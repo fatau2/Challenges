@@ -28,10 +28,36 @@ OUTPUT: ememe
 
 
 function rememberMe(lyrics) {
-    // code here
-  
+    var sentence = "rememberme";
+    var secondSentence = "";
+    for (let i = 0; i < lyrics.length; i++) {
+        secondSentence = secondSentence + lyrics[i];
+    }
+    for (let j = 0; j < secondSentence.length; j++) {
+      //console.log(secondSentence.length);
+      sentence = spliceThis(sentence,secondSentence[j]);
+    }
+    return sentence;
   }
   
+function spliceThis(sentence, characterToBeDeleted){
+  var newSentence = "";
+  var count = 1;
+  for (let i = 0; i < sentence.length; i++) {
+    if (sentence[i] !== characterToBeDeleted){
+     newSentence = newSentence + sentence[i];
+    }
+     if (sentence[i] === characterToBeDeleted && count <= 0){
+      newSentence = newSentence + sentence[i];
+     }
+    if (sentence[i] === characterToBeDeleted){
+      count--;
+    } 
+  }
+  //console.log(newSentence);
+  return newSentence;
+}
   console.log(rememberMe(['re', 'em', 'b', 'erm', 'em'])) //completed
   console.log(rememberMe(['rembr'])) //ememe
   console.log(rememberMe(['zoqoqo', 'zeieie', 'azzreqwm', 'fdasb', 'ravae', 'rera', 'mmmmm'])) //completed
+  //console.log(spliceThis("remember me", "e", 1));
