@@ -1,0 +1,32 @@
+body {
+    padding: 100px;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+.boxes {
+    display: flex;                       /* establish flex container */
+    flex-wrap: wrap;                     /* enable flex items to wrap */
+    justify-content: space-around;
+  }
+.box {
+border: 1px solid green ;
+}
+.cell {
+flex: 0 0 32%;                       /* don't grow, don't shrink, width */
+height: 50px;
+margin-bottom: 5px;
+background-color: gainsboro;
+text-align: center;
+}
+
+.buttons{
+    padding: 150px;
+}
+button{
+    text-align: center;
+    padding: 20px;
+}
