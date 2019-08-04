@@ -17,7 +17,7 @@ function goUp() {
             currentI = currentI - 1;
             var pos = currentI + "." + currentJ;
             if (document.getElementById(pos).style.backgroundColor === "red"){
-                document.getElementById(pos).innerHTML += 'Second pass';
+                //document.getElementById(pos).innerHTML += 'Second pass';
                 count++;
             } else {
             document.getElementById(pos).style.backgroundColor = "red";
@@ -37,7 +37,7 @@ function goUp() {
             currentI = currentI + 1;
             var pos = currentI + "." + currentJ;
             if (document.getElementById(pos).style.backgroundColor === "red"){
-                document.getElementById(pos).innerHTML += 'Second pass';
+                //document.getElementById(pos).innerHTML += 'Second pass';
                 count++;
             } else {
                 document.getElementById(pos).style.backgroundColor = "red";
@@ -57,7 +57,7 @@ function goUp() {
             currentJ = currentJ + 1;
             var pos = currentI + "." + currentJ;
             if (document.getElementById(pos).style.backgroundColor === "red"){
-                document.getElementById(pos).innerHTML += 'Second pass';
+                //document.getElementById(pos).innerHTML += 'Second pass';
                 count++;
             } else {
                 document.getElementById(pos).style.backgroundColor = "red";
@@ -77,7 +77,7 @@ function goUp() {
             currentJ = currentJ - 1;
             var pos = currentI + "." + currentJ;
             if (document.getElementById(pos).style.backgroundColor === "red"){
-                document.getElementById(pos).innerHTML += 'Second pass';
+                //document.getElementById(pos).innerHTML += 'Second pass';
                 count++;
             } else {
                 document.getElementById(pos).style.backgroundColor = "red";
@@ -111,7 +111,7 @@ function goUp() {
       } else {
         document.getElementById("output").innerHTML = "not empty";
       } */
-      return document.getElementById("output").innerHTML = document.getElementById("1.1").textContent;
+      return document.getElementById("output").innerHTML = "";
   }
 
-  console.log(resetCount());
+  //console.log(resetCount());
